@@ -1,0 +1,40 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+class student{
+    private:
+    int rollno;
+    string name;
+    float marks;
+    public:
+    student(int r,string n,float m){
+        rollno=r;
+        name=n;
+        marks=m;
+        cout<<"constructor called : student object created\n";
+    }
+    void display(){
+        cout<<"rollno="<<rollno<<endl;
+        cout<<"name="<<name<<endl;
+        cout<<"marks="<<marks<<endl;
+    }
+    ~student(){
+        cout<<"destructor called: student object deleted\n";
+    }
+};
+
+int main() {
+    student s(25,"vamshi",80.2);
+    s.display();
+  
+    return 0;
+}
+//output
+constructor called : student object created
+rollno=25
+name=vamshi
+marks=80.2
+destructor called: student object deleted
+
+
+=== Code Execution Successful ===
