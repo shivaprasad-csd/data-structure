@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int a[5]={3,2,1,2,3};
+    int ans=a[0];
+    for(int i=1;i<5;i++){
+        ans^=a[i];
+    }
+    cout<<"single number in array\n";
+    cout<<ans;
+    return 0;
+}
+output
+single number in array
+1
+
+=== Code Execution Successful ===
